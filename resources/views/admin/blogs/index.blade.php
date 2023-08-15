@@ -19,7 +19,7 @@
                     <td>{{ $blog->title }}</td>
                     <td>{{ $blog->summary }}</td>
                     <td>
-                        <img src="{{ asset("Blogs/Photos/".$blog->photo) }}" height="35">
+                        <img src="{{ asset("Files/Blogs/Photos/".$blog->photo) }}" height="35">
 
                     </td>
                     <td>

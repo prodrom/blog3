@@ -40,7 +40,7 @@ class BlogBController extends Controller
         $blog->summary = $request->summary;
         $blog->content = $request->content;
         if($request->hasFile("photo")){
-            $path = public_path("Blogs/Photos");
+            $path = public_path("Files/Blogs/Photos");
             $name = Str::random(10);
             $file = $request->file("photo");
             $name .= $name.$file->getClientOriginalName();
@@ -81,7 +81,7 @@ class BlogBController extends Controller
             $blog->summary = $request->summary;
             $blog->content = $request->content;
             if($request->hasFile("photo")){
-                $path = public_path("Blogs/Photos");
+                $path = public_path("Files/Blogs/Photos");
                 $name = Str::random(10);
                 $file = $request->file("photo");
                 $name .= $name.$file->getClientOriginalName();
